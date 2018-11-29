@@ -22,7 +22,7 @@ bot.on('message', message => {
         console.log(`${message.author.username} contact le Staff!`);
         let serverembed = new Discord.RichEmbed()
         .setTitle("Demande de STAFF")
-        .setDescription("Un membre du <@&468174150394183690> te contactera dans quelque instants.")
+        .setDescription("Un membre du <@&468174150394183690> te contactera dès que possible.")
         message.react("✅")
         message.channel.send(serverembed);
     }
