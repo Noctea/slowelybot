@@ -48,7 +48,7 @@ bot.on("message", message => {
             .addField("Nombres de membres sur le Discord", message.guild.memberCount)
             .setThumbnail("https://upload.wikimedia.org/wikipedia/commons/thumb/3/33/Info_icon_002.svg/768px-Info_icon_002.svg.png")
             .setColor("0x3333FF")
-        message.react("ℹ️")
+        message.react("👀")
         message.channel.sendEmbed(embed)
     }
 })
