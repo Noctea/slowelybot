@@ -26,6 +26,7 @@ bot.on("message", message => {
             .setThumbnail("http://portaildoc-veto.vetagro-sup.fr/wp-content/uploads/2018/05/brain.png")
             .setColor("0xFF9933")
             .setFooter("Le BOT est encore en développement ; d'autres commandes seront bientôt disponible.")
+        message.react(":ok_hand:")
         message.channel.sendEmbed(embed);
     }
 
@@ -36,5 +37,18 @@ bot.on("message", message => {
             .setDescription("Un membre du <@&468174150394183690> te contactera dès que possible.")
         message.react("✅")
         message.channel.sendEmbed(embed);
+    }
+
+    if (message.content === prefix + "infos") {
+        var embed = new Discord.RichEmbed()
+            .setDescription("Informations sur le Discord :")
+            .addField("Nom du Discord", message.guild.name)
+            .addField("Crée le", "Mardi 10 Juillet 2018 à 15h38 (Heure de Paris)")
+            .addField("Tu as rejoint le", message.member.joinedAt)
+            .addField("Nombres de membres sur le Discord", message.guild.memberCount)
+            .setThumbnail("https://upload.wikimedia.org/wikipedia/commons/thumb/3/33/Info_icon_002.svg/768px-Info_icon_002.svg.png")
+            .setColor("0x3333FF")
+        message.react(":information_source:")
+        message.channel.sendEmbed(embed)
     }
 })
