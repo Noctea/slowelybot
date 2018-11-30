@@ -25,7 +25,7 @@ bot.on("message", message => {
             .addField(".staff", "Mentionne le Staff (ne pas spam sous peine de bannissement)")
             .setThumbnail("http://portaildoc-veto.vetagro-sup.fr/wp-content/uploads/2018/05/brain.png")
             .setColor("0xFF9933")
-            .setFooter("Le BOT est encore en développement, d'autres commandes seront bientôt disponible.")
+            .setFooter("Le BOT est encore en développement ; d'autres commandes seront bientôt disponible.")
         message.channel.sendEmbed(embed);
     }
 
