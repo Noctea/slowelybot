@@ -66,7 +66,7 @@ bot.on("message", message => {
             .then(function (message) {
                 message.react("✅")
                 message.react("❌")
-            }).catch(funtion() {
+            }).catch(function() {
             });
         }else{
             return message.reply("Tu n'as pas la permission :x:")
