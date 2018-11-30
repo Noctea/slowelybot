@@ -52,4 +52,23 @@ bot.on("message", message => {
         message.react("👀")
         message.channel.sendEmbed(embed)
     }
-})
+
+    if (message.content.startsWith(prefix + "sondage")) {
+        if(message.author.is == "<@&468174150394183690>"){
+            let args = message.content.split(" ").slice(1);
+            let thingToEcho = args.join(" ")
+            var embed = new Discord.RichEmbed()
+                .setDescription("Sondage")
+                .addField(thingToEcho, "Répondre avec :white_check_mark: ou :x:")
+                .setColor("Ox")
+                .setTimestamp()
+            message.guild.channels.find("name", "👌sondage👌").sendEmbed(embed)
+            .then(function (message) {
+                message.react("✅")
+                message.react("❌")
+            }).catch(funtion() {
+            });
+        }else{
+            return message.reply("Tu n'as pas la permission :x:")
+         
+}}})
