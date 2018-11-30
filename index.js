@@ -26,7 +26,7 @@ bot.on("message", message => {
             .setThumbnail("http://portaildoc-veto.vetagro-sup.fr/wp-content/uploads/2018/05/brain.png")
             .setColor("0xFF9933")
             .setFooter("Le BOT est encore en développement ; d'autres commandes seront bientôt disponible.")
-        message.react(":ok_hand:")
+        message.react("👌")
         message.channel.sendEmbed(embed);
     }
 
@@ -48,7 +48,7 @@ bot.on("message", message => {
             .addField("Nombres de membres sur le Discord", message.guild.memberCount)
             .setThumbnail("https://upload.wikimedia.org/wikipedia/commons/thumb/3/33/Info_icon_002.svg/768px-Info_icon_002.svg.png")
             .setColor("0x3333FF")
-        message.react(":information_source:")
+        message.react("ℹ️")
         message.channel.sendEmbed(embed)
     }
 })
