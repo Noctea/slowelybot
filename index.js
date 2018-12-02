@@ -31,7 +31,7 @@ bot.on("message", message => {
         message.channel.sendEmbed(embed);
     }
 
-    if(message.content === prefix + "staff") {
+    if (message.content === prefix + "staff") {
         message.channel.send("<@&468174150394183690>")
         var embed = new Discord.RichEmbed()
             .setTitle("Demande de STAFF")
@@ -53,8 +53,8 @@ bot.on("message", message => {
         message.channel.sendEmbed(embed)
     }
 
-    if (message.content.startsWith(prefix + "sondage")) {
-        if(!message.member.hasPermission("MANAGE_MESSAGES")) {
+    if (message.content === prefix + "sondage") {
+        if (!message.member.hasPermission("MANAGE_MESSAGES")) {
             let args = message.content.split(" ").slice(1);
             let thingToEcho = args.join(" ")
             var embed = new Discord.RichEmbed()
@@ -63,12 +63,13 @@ bot.on("message", message => {
                 .setColor("Ox009933")
                 .setTimestamp()
             message.guild.channels.find("name", "👌sondage👌").sendEmbed(embed)
-            .then(function (message) {
-                message.react("✅")
-                message.react("❌")
-            }).catch(function() {
-            });
-        }else{
+                .then(function (message) {
+                    message.react("✅")
+                    message.react("❌")
+                }).catch(function () {});
+        } else {
             return message.reply("Tu n'as pas la permission :x:")
-         
-}}})
+
+        }
+    }
+})
