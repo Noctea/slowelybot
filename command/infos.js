@@ -16,7 +16,7 @@ module.exports = class Infos extends Command {
                 .setThumbnail("https://upload.wikimedia.org/wikipedia/commons/thumb/3/33/Info_icon_002.svg/768px-Info_icon_002.svg.png")
                 .setColor("0x3333FF")
             message.react("👀")
-            message.channel.sendEmbed(embed)
+            message.channel.sendEmbed(infos)
             return true
         }
     }
