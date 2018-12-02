@@ -7,7 +7,7 @@ module.exports = class Infos extends Command {
 
     static match(message) {
         if (message.content === prefix + "infos") {
-            const embed = new Discord.RichEmbed()
+            var infos = new Discord.RichEmbed()
                 .setDescription("Informations sur le Discord :")
                 .addField("Nom du Discord", message.guild.name)
                 .addField("Crée le", "Mardi 10 Juillet 2018 à 15h38 (Heure de Paris)")
