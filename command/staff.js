@@ -7,7 +7,7 @@ module.exports = class Staff extends Command {
 
     static match(message) {
         if (message.content === prefix + "staff") {
-            message.channel.send("<@&468174150394183690>")
+            message.channel.send("<@&502113512756084736>")
             const embed = new Discord.RichEmbed()
                 .setTitle("Demande de STAFF :")
                 .setDescription("Un membre du <@&502113512756084736> te contactera dès que possible.")
