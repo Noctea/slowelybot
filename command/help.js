@@ -24,6 +24,8 @@ module.exports = class Help extends Command {
             .setFooter("Le BOT est encore en développement ; d'autres commandes seront bientôt disponible.")
 
         message.channel.sendEmbed(help)
-        message.react("👌")
+        .then(function(message) {
+            message.react("👌")
+        })
     }
 }
