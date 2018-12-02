@@ -19,7 +19,7 @@ module.exports = class Poll extends Command {
         
         if(message.guild.channel.find("name", "👌sondage👌")) {
             message.delete()
-        }
+    }
 
         var pool = new Discord.RichEmbed()
             .setTitle("Sondage")
