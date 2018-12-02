@@ -23,7 +23,7 @@ module.exports = class Help extends Command {
             .setColor("0xFF9933")
             .setFooter("Le BOT est encore en développement ; d'autres commandes seront bientôt disponible.")
 
-        message.channel.sendEmbed(embed)
+        message.channel.sendEmbed(help)
         message.react("👌")
     }
 }
