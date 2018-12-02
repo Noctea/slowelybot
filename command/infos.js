@@ -21,7 +21,4 @@ module.exports = class Infos extends Command {
         }
     }
 
-    static action(message) {
-        message.channel.send("pong")
-    }
 }
