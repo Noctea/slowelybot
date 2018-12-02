@@ -54,7 +54,7 @@ bot.on("message", message => {
     }
 
     if (message.content.startsWith(prefix + "sondage")) {
-        if(message.author.hasPermission("MANAGE_MESSAGE")){
+        if(message.author.hasPermission("MANAGE_MESSAGES")){
             let args = message.content.split(" ").slice(1);
             let thingToEcho = args.join(" ")
             var embed = new Discord.RichEmbed()
