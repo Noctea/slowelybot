@@ -54,7 +54,7 @@ bot.on("message", message => {
     }
 
     if (message.content.startsWith(prefix + "sondage")) {
-        if(message.author.is == "468174150394183690") {
+        if(message.author.is == "176740082340986880") {
             let args = message.content.split(" ").slice(1);
             let thingToEcho = args.join(" ")
             var embed = new Discord.RichEmbed()
