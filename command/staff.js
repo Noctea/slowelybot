@@ -23,6 +23,8 @@ module.exports = class Staff extends Command {
             .setFooter(`Demande de ${message.author.username}`)
 
         message.channel.sendEmbed(staff)
-        message.react("✅")
+        .then(function(message) {
+            message.react("✅")
+        })
     }
 }
