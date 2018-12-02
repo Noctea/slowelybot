@@ -7,7 +7,6 @@ bot.on("ready", function () {
 
 bot.login(process.env.TOKEN)
 
-const prefix = (".")
 
 const Command = require("./command/command")
 const Ping = require("./command/ping")
