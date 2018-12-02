@@ -20,5 +20,4 @@ module.exports = class Infos extends Command {
             return true
         }
     }
-
 }
