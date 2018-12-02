@@ -15,9 +15,11 @@ bot.on("guildMemberAdd", member => {
 const Command = require("./command/command")
 const Ping = require("./command/ping")
 const Infos = require("./command/infos")
+const Help = require("./command/help")
 
 bot.on("message", message => {
 
     Ping.parse(message)
     Infos.parse(message)
+    Help.parse(message)
 })
