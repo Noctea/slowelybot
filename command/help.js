@@ -7,7 +7,7 @@ module.exports = class Help extends Command {
 
     static match(message) {
         if (message.content === prefix + "help") {
-            var help = new Discord.RichEmbed()
+            var embed = new Discord.RichEmbed()
                 .setTitle("Aide :")
                 .setDescription("Commandes Disponible avec <@517662031026061314>")
                 .addField(".help", "Affiche cette page")
