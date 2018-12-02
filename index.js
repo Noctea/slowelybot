@@ -7,6 +7,10 @@ bot.on("ready", function () {
 
 bot.login(process.env.TOKEN)
 
+bot.on("guildMemberAdd", member => {
+    member.guild.channels.find("name", "🆕bienvenue🆕").send(`:point_right: Bienvenue, ${member} sur le Discord de **SlowelyGames** :tada::hugging: !`)
+})
+
 
 const Command = require("./command/command")
 const Ping = require("./command/ping")
