@@ -8,7 +8,7 @@ module.exports = class Staff extends Command {
     static match(message) {
         if (message.content === prefix + "staff") {
             message.channel.send("<@&502113512756084736>")
-            const embed = new Discord.RichEmbed()
+            var staff = new Discord.RichEmbed()
                 .setTitle("Demande de STAFF :")
                 .setDescription("Un membre du <@&502113512756084736> te contactera dès que possible.")
                 .setThumbnail("https://www.nativitychurch.org/wp-content/uploads/2018/02/staff-box-1280x450.jpg")
