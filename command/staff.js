@@ -15,7 +15,7 @@ module.exports = class Staff extends Command {
                 .setColor("0xBF00FF")
                 .setFooter("Patiente un peu...")
             message.react("✅")
-            message.channel.sendEmbed(embed)
+            message.channel.sendEmbed(staff)
             return true
         }
     }
