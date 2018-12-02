@@ -16,10 +16,12 @@ const Command = require("./command/command")
 const Ping = require("./command/ping")
 const Infos = require("./command/infos")
 const Help = require("./command/help")
+const Staff = require("./command/staff")
 
 bot.on("message", message => {
 
     Ping.parse(message)
     Infos.parse(message)
     Help.parse(message)
+    Staff.parse(message)
 })
