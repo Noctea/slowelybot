@@ -53,8 +53,13 @@ bot.on("message", message => {
         message.channel.sendEmbed(embed)
     }
 
+<<<<<<< HEAD
     if (message.content === prefix + "sondage") {
         if (message.author.is === "176740082340986880") {
+=======
+    if (message.content.startsWith(prefix + "sondage")) {
+        if(message.author.is == "468174150394183690"){
+>>>>>>> parent of 1b339d5... Update index.js
             let args = message.content.split(" ").slice(1);
             let thingToEcho = args.join(" ")
             var embed = new Discord.RichEmbed()
