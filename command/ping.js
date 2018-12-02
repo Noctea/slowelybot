@@ -6,7 +6,7 @@ const prefix = (".")
 module.exports = class Ping extends Command {
 
     static match(message) {
-        if(message.content === prefix + "ping") {
+        if (message.content === prefix + "ping") {
             return true
         }
     }
