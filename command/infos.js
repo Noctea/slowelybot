@@ -23,6 +23,8 @@ module.exports = class Infos extends Command {
             .setColor("0x3333FF")
 
         message.channel.sendEmbed(infos)
-        message.react("👀")
+        .then(function(message) {
+            message.react("👀")
+        })    
     }
 }
