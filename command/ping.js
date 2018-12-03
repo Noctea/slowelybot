@@ -12,6 +12,14 @@ module.exports = class Ping extends Command {
     }
 
     static action(message) {
-        message.channel.send("pong")
+        
+        var ping = new Discord.RichEmbed()
+            .setTitle("Réponse du bot 👌")
+            .setFooter("Temps de latence avec le serveur : `" + `${message.createdTimestamp - Date.now()}` + " ms`")
+
+        message.channel.sendEmbed(ping)
+        .then(function(message) {
+            message.react("🤖")
+        })
     }
 }
