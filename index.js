@@ -17,6 +17,7 @@ const Ping = require("./command/ping")
 const Infos = require("./command/infos")
 const Help = require("./command/help")
 const Staff = require("./command/staff")
+const Pool = require("./command/pool")
 
 bot.on("message", message => {
 
@@ -24,4 +25,5 @@ bot.on("message", message => {
     Infos.parse(message)
     Help.parse(message)
     Staff.parse(message)
+    Pool.parse(message)
 })
