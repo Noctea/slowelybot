@@ -6,7 +6,6 @@ const Ping = require("./command/ping")
 const Infos = require("./command/infos")
 const Help = require("./command/help")
 const Staff = require("./command/staff")
-const Sondage = require("./command/sondage")
 
 bot.on("ready", function() {
     bot.user.setActivity(".help | SlowelyBot V2")
@@ -24,5 +23,4 @@ bot.on("message", message => {
     Infos.parse(message)
     Help.parse(message)
     Staff.parse(message)
-    Sondage.parse(message)
 })
