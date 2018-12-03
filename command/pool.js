@@ -26,10 +26,10 @@ module.exports = class Pool extends Command {
             .setFooter(`Créer par ${message.author.username}`)
 
         message.channel.send(pool)
-            .then(function (message) {
-                message.react("✅")
-                message.react("❌")
-            })
+        .then(function (message) {
+            message.react("✅")
+            message.react("❌")
+        })
 
         message.delete()
     }
