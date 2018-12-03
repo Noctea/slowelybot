@@ -17,7 +17,7 @@ module.exports = class Sondage extends Command {
         msg.shift()
         let question = msg.join(" ")
 
-        var pool = new Discord.RichEmbed()
+        var sondage = new Discord.RichEmbed()
             .setTitle("Sondage :")
             .setDescription(question, "?")
             .addField("✅ pour oui | ❌ pour non")
