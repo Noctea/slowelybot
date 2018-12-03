@@ -19,7 +19,7 @@ module.exports = class Pool extends Command {
 
         var pool = new Discord.RichEmbed()
             .setTitle("Sondage :")
-            .setDescription(question, "?")
+            .addField(question, "?")
             .addField("✅ pour oui | ❌ pour non")
             .setThumbnail("https://alapoigneedemains.com/wp-content/uploads/2018/04/104233021.jpg")
             .setColor("0xFFFFFF")
