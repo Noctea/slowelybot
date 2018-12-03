@@ -19,14 +19,14 @@ module.exports = class Pool extends Command {
 
         var pool = new Discord.RichEmbed()
             .setTitle("Sondage :")
-            .setDescription(question, ("?"))
+            .setDescription(question, "?")
             .addField("✅ pour oui | ❌ pour non")
             .setThumbnail("https://alapoigneedemains.com/wp-content/uploads/2018/04/104233021.jpg")
             .setColor("0xFFFFFF")
             .setFooter(`Créer par ${message.author.username}`)
 
         message.channel.send(pool)
-        .then(function (message) {
+        .then(function(message) {
             message.react("✅")
             message.react("❌")
         })
