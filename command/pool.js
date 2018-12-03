@@ -11,7 +11,7 @@ module.exports = class Pool extends Command {
         }
     }
 
-    static action(message) {
+    static action (message) {
 
         let msg = message.content.split(" ")
         msg.shift()
