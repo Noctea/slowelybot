@@ -6,7 +6,7 @@ const prefix = (".")
 module.exports = class Pool extends Command {
 
     static match(message) {
-        if (message.content.starstWith(prefix + "pool")) {
+        if (message.content.starstWith(prefix + "sondage")) {
             return true
         }
     }
@@ -19,7 +19,7 @@ module.exports = class Pool extends Command {
 
         var pool = new Discord.RichEmbed()
             .setTitle("Sondage :")
-            .addField(question, "?")
+            .setDescription(question, ("?"))
             .addField("✅ pour oui | ❌ pour non")
             .setThumbnail("https://alapoigneedemains.com/wp-content/uploads/2018/04/104233021.jpg")
             .setColor("0xFFFFFF")
