@@ -6,7 +6,7 @@ const prefix = (".")
 module.exports = class Pool extends Command {
 
     static match(message) {
-        if (message.content.starstWith(prefix + "sondage")) {
+        if (message.content.starstWith(prefix + "pool")) {
             return true
         }
     }
