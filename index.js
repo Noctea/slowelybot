@@ -14,7 +14,7 @@ bot.on("ready", function() {
 bot.login(process.env.TOKEN)
 
 bot.on("guildMemberAdd", member => {
-    member.guild.channels.find("name", "🆕bienvenue🆕").send(`:point_right: Bienvenue, ${member} sur le Discord de **SlowelyGames** :tada::hugging: !`)
+    member.guild.channels.find("name", "logs-bvn").send(`:point_right: Bienvenue, ${member} sur le Discord de **SlowelyGames** :tada::hugging: !`)
 })
 
 bot.on("message", message => {
