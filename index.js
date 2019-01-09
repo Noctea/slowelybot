@@ -8,7 +8,7 @@ const Help = require("./command/help")
 const Staff = require("./command/staff")
 
 bot.on("ready", function() {
-    bot.user.setActivity("| .help |")
+    bot.user.setActivity("Aide | .help")
 })
 
 bot.login(process.env.TOKEN)
