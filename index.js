@@ -8,7 +8,7 @@ const Help = require("./command/help")
 const Staff = require("./command/staff")
 
 bot.on("ready", function() {
-    bot.user.setActivity(".help | SlowelyBot V2")
+    bot.user.setActivity("| .help |")
 })
 
 bot.login(process.env.TOKEN)
