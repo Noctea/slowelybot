@@ -19,7 +19,8 @@ module.exports = class Sondage extends Command {
 
         var sondage = new Discord.RichEmbed()
             .setTitle("Sondage :")
-            .addField(question, "✅ pour oui | ❌ pour non")
+            .setDescription(question)
+            .addField("✅ pour oui | ❌ pour non")
             .setThumbnail("https://alapoigneedemains.com/wp-content/uploads/2018/04/104233021.jpg")
             .setColor("0xFFFFFF")
             .setFooter(`Créer par ${message.author.username}`)
