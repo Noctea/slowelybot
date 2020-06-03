@@ -19,8 +19,8 @@ module.exports = class Sondage extends Command {
 
         var sondage = new Discord.RichEmbed()
             .setTitle("Sondage :")
-            .setDescription(question,)
-            .addField("✅ pour oui | ❌ pour non",)
+            .setDescription($question)
+            .addField("✅ pour oui | ❌ pour non")
             .setColor("0xFFFFFF")
             .setFooter(`Créer par ${message.author.username}`)
 
