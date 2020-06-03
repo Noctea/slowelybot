@@ -6,7 +6,7 @@ const prefix = (".")
 module.exports = class Sondage extends Command {
 
     static match(message) {
-        if (message.content.starstWith === prefix + "sondage") {
+        if (message.content.startsWith(prefix + "sondage")) {
             return true
         }
     }
